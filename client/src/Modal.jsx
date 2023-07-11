@@ -56,7 +56,7 @@ function Modal({
                     if (
                         !(
                             nameField.value &&
-                            lastNameField &&
+                            lastNameField.value &&
                             birthdayField &&
                             genderField &&
                             heightField &&
