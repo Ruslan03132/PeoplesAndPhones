@@ -24,10 +24,9 @@ class PhonesController {
         return res.json(phones);
     }
     async addPhone(req, res) {
-        const { phone_id, phone_number, people_id, assignment } = req.body;
+        const {phone_number, people_id, assignment } = req.body;
 
         const phone = await Phones.create({
-            phone_id,
             phone_number,
             people_id,
             assignment,
